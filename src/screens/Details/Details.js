@@ -1,6 +1,6 @@
 import React from 'react';
 import {View, Text, StyleSheet} from 'react-native';
-
+import {styles} from './styles';
 export const Details = ({route, navigation}) => {
   console.log(route.params);
   const {data} = route.params;
@@ -12,11 +12,3 @@ export const Details = ({route, navigation}) => {
     </View>
   );
 };
-
-const styles = StyleSheet.create({
-  container: {
-    display: 'flex',
-    flex: 1,
-    padding: 15,
-  },
-});

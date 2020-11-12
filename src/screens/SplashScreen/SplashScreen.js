@@ -8,6 +8,7 @@ import {
   Animated,
   Dimensions,
 } from 'react-native';
+import {styles} from './styles';
 export const SplashScreen = ({navigation}) => {
   const logoAnim = useRef(new Animated.Value(0)).current;
   const moveAnim = useRef(new Animated.Value(0)).current;
@@ -61,21 +62,3 @@ export const SplashScreen = ({navigation}) => {
     </SafeAreaView>
   );
 };
-
-const styles = StyleSheet.create({
-  container: {
-    display: 'flex',
-    flex: 1,
-    backgroundColor: '#2a2251',
-  },
-  logoText: {
-    fontSize: 35,
-    marginTop: 20,
-    color: 'white',
-    fontWeight: '700',
-  },
-  contentContainer: {
-    top: '40%',
-    alignItems: 'center',
-  },
-});
